@@ -1,0 +1,27 @@
+fibonacci_v1:
+O(1)
+
+O(1)
+
+O(n-1) + O(n-2) -> O(n+1)
+
+== O(n)
+
+fibonacci_v2:
+O(1): Constant 1
+
+O(1): Constant 2
+
+O(1): Constant 3, since find is considered constant
+
+== O(1)
+
+fibonacci_iter:
+O(1): Constants
+
+O(n-1): for loop
+O(1): Constants inside for loop
+
+O(1): One return
+
+== O(n)
