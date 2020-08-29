@@ -17,20 +17,20 @@ int main(){
     bool tallestGet = false; //loop to check if tallest building value is obtained
     int highNum = 0;
     int middle = 0;
-    int left = 0;
-    int right = n-1;
+    int down = 0;
+    int up = n-1;
     int tallestBuilding = 0; //row of tallest building
 
     while(tallestGet == false){
         
-        middle = left + ((right-left)/2); //used for binary search
+        middle = down + ((up-down)/2); //used for binary search
 
         for(int i=0;i<m;i++){
 
             //if 0 is found and 0 is not middle number
             if(0 == buildings[middle][i] && middle != highNum){
                 tallestBuilding = i;
-                right = middle - 1;
+                up = middle - 1;
                 break;
             }
 
@@ -43,8 +43,8 @@ int main(){
 
             //used in order to keep searching, since 0 wasn't found
             else if(i == m - 1 && 0 != buildings[middle][i]){
-                left = middle + 1;
-                highNum = left;
+                down = middle + 1;
+                highNum = down;
             }
         }
     }
