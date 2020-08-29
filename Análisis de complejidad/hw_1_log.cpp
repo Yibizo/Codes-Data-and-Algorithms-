@@ -28,14 +28,14 @@ int main(){
         for(int i=0;i<m;i++){
 
             //if 0 is found and 0 is not middle number
-            if(0 == buildings[middle][i] && middle != highNum){
+            if(middle != highNum && 0 == buildings[middle][i]){
                 tallestBuilding = i;
                 up = middle - 1;
                 break;
             }
 
             //get tallest building position if 0 is in middle position
-            else if(0 == buildings[middle][i] && middle == highNum){
+            else if(middle == highNum && 0 == buildings[middle][i]){
                 tallestBuilding = i;
                 tallestGet = true;
                 break;
