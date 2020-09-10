@@ -118,35 +118,6 @@ int main(){
         vec1[i] = randomNum;
     }
 
-    //hacer copia para segunda búsqueda
-    vector<int> vec2(vec1);
-
-    //seleccionar algoritmo de ordenamiento
-    cout << "Ingresar numero de algoritmo de ordenamiento a utilizar para la busqueda binaria:\n1 para Insertion Sort\n2 para Bubble Sort\n3 para Quick Sort\nInput: ";
-    int ordenNum;
-    while(cin>>ordenNum){
-        if(ordenNum<=3 && ordenNum>=0){
-            break;
-        }
-        else{
-            cout << "Numero invalido, ingresar numero del 1 al 3: ";
-        }
-    }
-
-    //ordenar vector de acuerdo a selección
-    if(ordenNum == 1){
-        ordenaInsercion(vec2);
-        cout << "(Vector ordenado para Busqueda Binaria usando Insertion Sort)" << endl;
-    }
-    else if(ordenNum == 2){
-        ordenaBurbuja(vec2);
-        cout << "(Vector ordenado para Busqueda Binaria usando Bubble Sort)" << endl;
-    }
-    else{
-        ordenaQuick(vec2,0,vec2.size()-1);
-        cout << "(Vector ordenado para Busqueda Binaria usando Quick Sort)" << endl;
-    }
-
     //Cantidad de números a buscar
     cout << "Ingresar cantidad de busquedas que se desea hacer: ";
     int cantidadBusquedas;
@@ -165,6 +136,33 @@ int main(){
         cout << "Ingresar numero a buscar: ";
         cin >> numBusqueda;
         cout << "Indice del numero " << numBusqueda << " usando Busqueda Secuencial: " << busqSecuencial(vec1,numBusqueda) << endl;
+        cout << "Ingresar numero de algoritmo de ordenamiento a utilizar para la busqueda binaria:\n1 para Insertion Sort\n2 para Bubble Sort\n3 para Quick Sort\nInput: ";
+        int ordenNum;
+        while(cin>>ordenNum){
+            if(ordenNum<=3 && ordenNum>=0){
+                break;
+            }
+            else{
+                cout << "Numero invalido, ingresar numero del 1 al 3: ";
+            }
+        }
+        //hacer copia para segunda búsqueda
+        vector<int> vec2(vec1);
+
+        //ordenar vector de acuerdo a selección
+        if(ordenNum == 1){
+            ordenaInsercion(vec2);
+            cout << "(Vector ordenado para Busqueda Binaria usando Insertion Sort)" << endl;
+        }
+        else if(ordenNum == 2){
+            ordenaBurbuja(vec2);
+            cout << "(Vector ordenado para Busqueda Binaria usando Bubble Sort)" << endl;
+        }
+        else{
+            ordenaQuick(vec2,0,vec2.size()-1);
+            cout << "(Vector ordenado para Busqueda Binaria usando Quick Sort)" << endl;
+        }
+        
         cout << "Indice del numero " << numBusqueda << " usando Busqueda Binaria: " << busqBinaria(vec2,0,vec2.size()-1,numBusqueda) << endl;
     }
 }
