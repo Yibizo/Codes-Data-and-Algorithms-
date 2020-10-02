@@ -123,7 +123,7 @@ public:
                     //guardar el siguiente siguiente valor, y liberar memoria del siguiente
                     nextOfNext = (ptr->get_next())->get_next();
                     free(ptr->get_next());
-                    //avanzar con el siguiente siguiente puntero
+                    //definir el siguiente como siguiente siguiente
                     ptr->set_next(nextOfNext);
                 }
                 //solo avanzar al siguiente puntero si no se encuentran más valores duplicados
