@@ -122,7 +122,7 @@ public:
                 if(ptr->get_val() == (ptr->get_next()->get_val())){
                     //guardar el siguiente siguiente valor, y liberar memoria del siguiente
                     nextOfNext = (ptr->get_next())->get_next();
-                    free(ptr->get_next());
+                    delete (ptr->get_next());
                     //definir el siguiente como siguiente siguiente
                     ptr->set_next(nextOfNext);
                 }
