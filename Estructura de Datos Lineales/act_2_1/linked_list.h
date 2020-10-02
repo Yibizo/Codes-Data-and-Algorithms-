@@ -1,7 +1,7 @@
 //Descripción: Programa que crea listas enlazadas a través de punteros y utiliza funciones para manipular valores dentro de esta lista
 //Autor: Diego Mejía Suárez - A01024228
 //Fecha de Creación: 29/09/2020
-//Fecha de Modificación: 01/10/2020
+//Fecha de Modificación: 02/10/2020
 
 #ifndef _LINKED_LIST_H
 #define _LINKED_LIST_H

@@ -61,8 +61,9 @@ int main(){
     list.DeleteList();
     list.print();
 
-    //Insertar el nodo con el valor de 100 si la lista está vacía
+    //Insertar el nodo con el valor de 101 si la lista está vacía
     Node<int> *node101 = new Node<int>(101, NULL);
+    cout << "Sorted insert number 101 when list is empty:" << endl;
     list.SortedInsert(node101);
     list.print();
 }

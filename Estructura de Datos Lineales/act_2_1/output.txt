@@ -9,6 +9,11 @@ Count for 100:
 Sorted insert number 1:
 1  3  3  10  10  42  48  56
 Sorted insert number 40:
+Count for 100:
+0
+Sorted insert number 1:
+1  3  3  10  10  42  48  56
+Sorted insert number 40:
 1  3  3  10  10  40  42  48  56
 Sorted insert number 100:
 1  3  3  10  10  40  42  48  56  100
@@ -18,4 +23,5 @@ Reverse:
 100  56  48  42  40  10  3  1
 Delete list and free memory:
 (empty list)
+Sorted insert number 101 when list is empty:
 101
