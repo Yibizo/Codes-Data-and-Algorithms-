@@ -1,7 +1,7 @@
 //Descripción: Implementación del header linked_list.h con diversos casos prueba
 //Autor: Diego Mejía Suárez - A01024228
 //Fecha de Creación: 29/09/2020
-//Fecha de Modificación: 01/10/2020
+//Fecha de Modificación: 02/10/2020
 
 #include "linked_list.h"
 
